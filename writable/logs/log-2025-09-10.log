@@ -1,0 +1,56 @@
+CRITICAL - 2025-09-10 01:39:43 --> Error: Class "App\Models\Model" not found
+[Method: GET, Route: /]
+in APPPATH\Models\BukuModel.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(315): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('E:\\Kuliah\\Semester 3\\Web 2\\Pertemuan Ke-2\\ci\\app\\Models\\BukuModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\BukuModel')
+ 4 APPPATH\Controllers\Buku.php(10): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\BukuModel')
+ 5 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Buku->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('E:\\Kuliah\\Semester 3\\Web 2\\Pertemuan Ke-2\\ci\\public\\index.php')
+CRITICAL - 2025-09-10 03:10:13 --> Error: Class "App\Models\Model" not found
+[Method: GET, Route: /]
+in APPPATH\Models\BukuModel.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(315): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('E:\\Kuliah\\Semester 3\\Web 2\\Pertemuan Ke-2\\ci\\app\\Models\\BukuModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\BukuModel')
+ 4 APPPATH\Controllers\Buku.php(10): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\BukuModel')
+ 5 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Buku->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('E:\\Kuliah\\Semester 3\\Web 2\\Pertemuan Ke-2\\ci\\public\\index.php')
+CRITICAL - 2025-09-10 03:12:19 --> Error: Class "App\Models\Model" not found
+[Method: GET, Route: /]
+in APPPATH\Models\BukuModel.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(315): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('E:\\Kuliah\\Semester 3\\Web 2\\Pertemuan Ke-2\\ci\\app\\Models\\BukuModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\BukuModel')
+ 4 APPPATH\Controllers\Buku.php(10): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\BukuModel')
+ 5 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Buku->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('E:\\Kuliah\\Semester 3\\Web 2\\Pertemuan Ke-2\\ci\\public\\index.php')
+CRITICAL - 2025-09-10 03:13:53 --> Error: Class "App\Models\Model" not found
+[Method: GET, Route: buku/tambah]
+in APPPATH\Models\BukuModel.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(315): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('E:\\Kuliah\\Semester 3\\Web 2\\Pertemuan Ke-2\\ci\\app\\Models\\BukuModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\BukuModel')
+ 4 APPPATH\Controllers\Buku.php(10): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\BukuModel')
+ 5 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Buku->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('E:\\Kuliah\\Semester 3\\Web 2\\Pertemuan Ke-2\\ci\\public\\index.php')
