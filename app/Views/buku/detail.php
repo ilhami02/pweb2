@@ -1,4 +1,4 @@
-<?= $this->extends('layout/header');?>
+<?= $this->extend('layout/main');?>
 <?= $this->section('content');?>
 <div class="container">
     <div class="row">

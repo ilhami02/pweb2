@@ -6,6 +6,8 @@ use App\Models\BukuModel;
 
 class Buku extends BaseController
 {
+    protected $BukuModel;
+
     public function __construct() {
         $this->BukuModel = new BukuModel();
     }
@@ -35,7 +37,7 @@ class Buku extends BaseController
             'validation' => \Config\Services::validation()
         ];
         
-        return view('buku/detail', $data);
+        return view('buku/tambah', $data);
     }
 
     public function simpan() {
@@ -47,9 +49,11 @@ class Buku extends BaseController
                 ]
             ]
         )) {
-            $validation = \Config\Service::validation();
+            $validation = \Config\Services::validation();
             return redirect()->to('buku/tambah') -> withInput() -> with('validation', $validation);
         }
+
+        //simpan
         $this->BukuModel->save(
             [
                 'judul' => $this->request-getVar('judul'),
