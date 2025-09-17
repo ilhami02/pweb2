@@ -1,7 +1,7 @@
 <?php
 namespace App\Models;
 
-use CodeIgniter\Models;
+use CodeIgniter\Model;
 
 class BukuModel extends Model {
     protected $table = 'buku';

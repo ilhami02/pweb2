@@ -7,5 +7,6 @@ use CodeIgniter\Router\RouteCollection;
  */
 // $routes->get('/', 'Home::index');
 $routes->get('/', 'Pages::index');
+$routes->get('/buku', 'Buku::index');
 $routes->get('/buku/(:any)', 'Buku::detail/$1');
 

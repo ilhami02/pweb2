@@ -1,3 +1,4 @@
+<?= $this->extend('layout/main')?>
 <?= $this->section('content')?>
 <div class="Container">
     <div class="row">
@@ -8,5 +9,3 @@
     </div>
 </div>
 <?= $this->endSection()?>
-
-<?= $this->renderSection('content')?>

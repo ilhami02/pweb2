@@ -1,4 +1,4 @@
-<?= $this->extends('layout/header');?>
+<?= $this->extend('layout/main');?>
 <?= $this->section('content');?>
 <div class="container">
     <div class="row">
@@ -14,13 +14,14 @@
                     </tr>
                 </thead>
                 <tbody>
+
                     <?php
                     $i = 1;
                     foreach($buku as $b):
                     ?>
                     <tr>
-                        <th scope="row"><?php echo $i++?></th>
-                        <td><img src="/img/<?= $b=['sampul']?>" alt="" witdh="75"></td>
+                        <th scope="row"><?= $i++?></th>
+                        <td><img src="/img/<?= $b['sampul']?>" alt="" witdh="75"></td>
                         <td><?= $b['judul']?></td>
                         <td><a href="/buku/<?= $b['id_buku']?>" class="btn btn-success">Detail</td>
                     </tr>
