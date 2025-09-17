@@ -1,9 +1,15 @@
-<?= $this->extend('layout/main');?>
+<?= $this->extend('layout/template');?>
 <?= $this->section('content');?>
 <div class="container">
     <div class="row">
         <div class= "col">
-            <h1>Data Buku</h1>
+            <h1>Daftar Buku</h1>
+            <?php if(session()->getFlashdata('pesan')) : ?>
+                <div class= "alert alert-success" role="alert">
+                    <?= session()->getFLashdata('pesan');?>
+                </div>
+            <?php endif?>
+            <a href="/buku/tambah" class="btn btn-primary">Tambah Data Buku</a>
             <table class="table">
                 <thead>
                     <tr>

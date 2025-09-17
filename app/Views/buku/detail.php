@@ -1,4 +1,4 @@
-<?= $this->extend('layout/main');?>
+<?= $this->extend('layout/template');?>
 <?= $this->section('content');?>
 <div class="container">
     <div class="row">
@@ -15,10 +15,18 @@
                             <p class="card-text"><b>Pengarang: <?= $buku['pengarang'];?></b></p>
                             <p class="card-text">Penerbit: <?= $buku['penerbit'];?></p>
                             <p class="card-text">Tahun Terbit: <?= $buku['tahun_terbit'];?></p>
-                            <a href="#" class="btn btn-warning">Ubah</a>
-                            <a href="#" class="btn btn-danger">Hapus</a>
+                            <a href="/buku/ubah/<?= $buku['id_buku']?>" class="btn btn-warning">Ubah</a>
+
+                            <form action="/buku/<?= $buku['id_buku']?>" method="post" class="d-inline">
+                                <?= csrf_field();?>
+                                <input type="hidden" name="_method" value="DELETE">
+                                <button type="submit" class="btn btn-danger" onclick="return confirm('Yakin Hapus Data ini?')">Hapus</button>
+                            </form>
                             <br>
-                            <a href="/buku">Kembali ke Daftar Buku</a>
+                            <a href="/buku" class="btn btn-secondary mt-3">
+                                <i class="bi bi-arrow-left-circle"></i> Kembali ke Daftar Buku
+                            </a>
+
                         </div>
                     </div>
                 </div>
