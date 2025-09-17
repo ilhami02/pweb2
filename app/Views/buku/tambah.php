@@ -36,7 +36,7 @@
                 <label for="inputSampul" class="col-sm-2 col-form-label">Sampul</label>
                 <div class="col-sm-4">
                     <div class= "custom-file">
-                        <input type="file" class="form-control <?= ($validation->hasError('sampul')) ? 'is-invalid' : '';?>" required>
+                        <input type="file" name="sampul" class="form-control <?= ($validation->hasError('sampul')) ? 'is-invalid' : '';?>" required>
                         <div class= "invalid-feedback">
                             <?= $validation->getError('sampul');?>
                         </div>
