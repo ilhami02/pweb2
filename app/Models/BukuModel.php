@@ -5,7 +5,7 @@ use CodeIgniter\Model;
 
 class BukuModel extends Model {
     protected $table = 'buku';
-    protected $primarykey = 'id_buku';
+    protected $primaryKey = 'id_buku';
     protected $allowedFields = ['judul','pengarang', 'penerbit', 'tahun_terbit', 'sampul'];
     
     public function getBuku($idbuku = false) {
