@@ -14,11 +14,20 @@ class Buku extends BaseController
 
     public function index() 
     {
+        $current = $this->request->getVar('page_buku') ? $this->request->getVar('page_buku'):1;
+        $cari = $this->request->getVar('cari');
+        if ($cari) {
+            $buku = $this->BukuModel->findBuku($cari);
+        } else {
+            $buku = $this->BukuModel;
+        }
         $data = [
             'title' => 'Daftar Buku',
-            'buku' => $this->BukuModel->getBuku()
+            'buku' => $buku->paginate(2, 'buku'),
+            'pager' => $buku->pager,
+            'current' => $current,
         ];
-        
+
         return view('buku/index', $data);
     }
     
@@ -114,12 +123,16 @@ class Buku extends BaseController
         ))
         
         $filesampul = $this->request->getFile('sampul');
-        // $nmsampul = $filesampul->getName();
         
         if($filesampul->getError() == 4) {
+            //error handle error 4 (file not upload)
             $nmsampul = $this->request->getVar('sampulLama');
         } else {
-            // $filesampul->move('img');
+            //remove old sampul img
+            $bukuLama = $this->BukuModel->getBuku($idbuku);
+            unlink('img/' . $bukuLama['sampul']);
+            
+            //add new img for sampul
             $nmsampul = $filesampul -> getName();
             $filesampul->move('img', $nmsampul);
         }

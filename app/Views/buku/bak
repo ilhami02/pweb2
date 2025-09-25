@@ -1,0 +1,23 @@
+            <div class="form-group row">
+                <label for="previewSampul" class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-4">
+                    <img src="/img/<?= $buku['sampul']?>" class="img-thumbnail img-preview" width="200px">
+                </div>
+            </div>
+
+
+        <script>
+            function previewSampul() {
+                const sampul = document.querySelector('#sampul');
+                const imgPreview = document.querySelector('.img-preview');
+                const fileSampul = new FileReader();
+            
+                fileSampul.readAsDataURL(sampul.files[0]);
+            
+                fileSampul.onload = function(e) {
+                    imgPreview.src = e.target.result;
+                }
+            }
+        
+            document.getElementById('sampul').addEventListener('change', previewSampul);
+        </script>
